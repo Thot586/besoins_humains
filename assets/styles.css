@@ -925,24 +925,46 @@ body.cat-s .section-body li::before{background:var(--acc-s-2)}
 }
 
 @media print{
-  @page{margin:1.5cm}
-  body{background:white;color:#111;min-height:auto}
-  body::before{display:none}
-  .site-header,.breadcrumb,.theme-toggle,.search-wrap,.no-results{display:none}
-  .skip-link{display:none}
-  .container{max-width:none;padding:0}
-  .need-card,.glass,details.section,.refs-hero,.refs-method,.refs-group,.related{background:white!important;backdrop-filter:none;-webkit-backdrop-filter:none;border:1px solid #bbb;box-shadow:none}
-  details.section{page-break-inside:avoid;border:none;padding:0;margin:0 0 0.8cm}
-  details.section summary{cursor:default;padding:0.3cm 0;background:transparent!important}
-  details.section summary .summary-chevron{display:none}
-  details.section>*:not(summary){display:block!important}
-  .section-body{padding:0!important;animation:none}
-  .section-body li{background:white;border:none;padding:0.15cm 0 0.15cm 0.6cm}
-  .section-body li::before{background:#555;top:0.55em}
-  .hero h1,.need-head h1,.refs-hero h1{font-size:22pt!important}
-  .hero-lede,.desc,.lede{font-size:11pt!important}
-  a{color:#111;text-decoration:none}
-  .ref-anchor::after{content:attr(href);font-size:7pt;color:#666}
-  .site-footer{margin-top:1cm;border-top:1px solid #bbb}
-  .related,.refs-list li,details.section{page-break-inside:avoid}
+  @page{margin:1.2cm}
+  html,body{background:white!important;color:#111!important;min-height:auto;font-size:11pt}
+  body::before{display:none!important}
+  .site-header,.breadcrumb,.theme-toggle,.lang-switch,.header-controls,.search-wrap,.no-results,.skip-link,.print-btn{display:none!important}
+  .container{max-width:none;padding:0;margin:0}
+  main{padding:0!important}
+  .need-card,.glass,details.section,.refs-hero,.refs-method,.refs-group,.related,.need-head{background:white!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;border:none;box-shadow:none;padding:0;margin:0}
+  .hero,.need-head,.refs-hero{padding:0!important;margin:0 0 0.4cm!important}
+  .reveal,.reveal-stagger>*{animation:none!important;opacity:1!important;transform:none!important}
+  .hero h1,.need-head h1,.refs-hero h1{font-size:20pt!important;line-height:1.2;margin-bottom:0.2cm}
+  .need-head .subtitle{font-size:12pt;margin-bottom:0.2cm}
+  .hero-lede,.need-head .desc,.refs-hero .lede{font-size:10.5pt!important;line-height:1.45;max-width:none}
+  .eyebrow{margin-bottom:0.1cm;font-size:8pt}
+  h2{font-size:13pt!important;margin-bottom:0.15cm}
+  .sections{gap:0.2cm!important}
+  details.section{page-break-inside:avoid;margin:0 0 0.3cm!important}
+  details.section[open]>*,details.section>*{display:block!important}
+  details.section summary{list-style:none;cursor:default;padding:0.15cm 0!important;background:transparent!important;border:none}
+  details.section summary .summary-chevron,details.section summary::marker,details.section summary::-webkit-details-marker{display:none!important}
+  details.section summary h2{font-size:13pt!important;margin:0}
+  .summary-icon{display:none!important}
+  .section-body{padding:0 0 0 0.3cm!important;animation:none!important;margin-top:0.1cm}
+  .section-body ul{gap:0.08cm!important}
+  .section-body li{background:white!important;border:none!important;padding:0.05cm 0 0.05cm 0.5cm!important;line-height:1.4;font-size:10.5pt}
+  .section-body li::before{background:#555!important;top:0.55em;width:4px;height:4px;left:0}
+  a{color:#111!important;text-decoration:none}
+  .ref-anchor{font-size:8pt;color:#666!important}
+  .ref-anchor::after{content:" (" attr(href) ")";font-size:7pt;color:#666}
+  .related{margin-top:0.4cm!important;padding:0.3cm 0 0!important;border-top:1px solid #bbb}
+  .related h2{font-size:10pt!important;margin-bottom:0.15cm}
+  .related-list{gap:0.3cm!important}
+  .related-chip{background:white!important;border:1px solid #ccc!important;padding:0.1cm 0.25cm!important;font-size:9pt!important}
+  .refs-method ul{margin-top:0.15cm}
+  .refs-list{gap:0.15cm!important}
+  .refs-list li{background:white!important;padding:0.1cm 0!important;border:none!important;border-bottom:1px dotted #ddd;font-size:9.5pt;line-height:1.35}
+  .refs-list li:last-child{border-bottom:none}
+  .refs-group{margin-bottom:0.5cm!important}
+  .refs-group h2{font-size:10pt!important;letter-spacing:0.05em}
+  .ref-tag{font-size:7pt!important;padding:1px 4px!important;background:#e5e5e5!important;color:#333!important}
+  .site-footer{margin-top:0.6cm;padding:0.3cm 0 0;border-top:1px solid #bbb;font-size:9pt}
+  h1,h2,h3,h4{page-break-after:avoid}
+  .refs-list li,details.section,.related-chip,.refs-group{page-break-inside:avoid}
 }

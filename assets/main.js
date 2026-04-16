@@ -84,3 +84,23 @@ if (location.hash) {
   const target = document.getElementById(location.hash.slice(1));
   if (target?.tagName === 'DETAILS') target.open = true;
 }
+
+const detailsNodes = [...document.querySelectorAll('details')];
+const savedOpenState = new WeakMap();
+const expandAllDetails = () => {
+  for (const d of detailsNodes) {
+    savedOpenState.set(d, d.open);
+    d.open = true;
+  }
+};
+const restoreDetails = () => {
+  for (const d of detailsNodes) {
+    if (savedOpenState.has(d)) d.open = savedOpenState.get(d);
+  }
+};
+window.addEventListener('beforeprint', expandAllDetails);
+window.addEventListener('afterprint', restoreDetails);
+const printMedia = matchMedia('print');
+printMedia.addEventListener('change', event => {
+  event.matches ? expandAllDetails() : restoreDetails();
+});
