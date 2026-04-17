@@ -79,6 +79,56 @@ if (searchInput) {
   });
 }
 
+const abbrs = document.querySelectorAll('abbr[title]');
+if (abbrs.length) {
+  let popover = null;
+  const hidePopover = () => {
+    if (!popover) return;
+    popover.remove();
+    popover = null;
+  };
+  const showPopover = el => {
+    hidePopover();
+    const text = el.getAttribute('title');
+    if (!text) return;
+    popover = document.createElement('div');
+    popover.className = 'abbr-pop';
+    popover.setAttribute('role', 'tooltip');
+    popover.textContent = text;
+    document.body.appendChild(popover);
+    const rect = el.getBoundingClientRect();
+    const popRect = popover.getBoundingClientRect();
+    const maxLeft = window.innerWidth - popRect.width - 8;
+    const left = Math.max(8, Math.min(maxLeft, rect.left + window.scrollX));
+    const spaceBelow = window.innerHeight - rect.bottom;
+    const showAbove = spaceBelow < popRect.height + 16 && rect.top > popRect.height + 16;
+    const top = showAbove
+      ? rect.top + window.scrollY - popRect.height - 6
+      : rect.bottom + window.scrollY + 6;
+    popover.style.left = left + 'px';
+    popover.style.top = top + 'px';
+  };
+  for (const a of abbrs) a.tabIndex = 0;
+  document.addEventListener('click', event => {
+    const target = event.target.closest('abbr[title]');
+    if (target) {
+      event.preventDefault();
+      popover?.contains(event.target) ? hidePopover() : showPopover(target);
+      return;
+    }
+    if (popover && !event.target.closest('.abbr-pop')) hidePopover();
+  });
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape') hidePopover();
+    else if (event.key === 'Enter' && event.target.matches('abbr[title]')) {
+      event.preventDefault();
+      showPopover(event.target);
+    }
+  });
+  window.addEventListener('scroll', hidePopover, true);
+  window.addEventListener('resize', hidePopover);
+}
+
 if (location.hash) {
   const target = document.getElementById(location.hash.slice(1));
   if (target?.tagName === 'DETAILS') target.open = true;
