@@ -298,6 +298,14 @@ main{padding-bottom:var(--sp-8)}
   border-color:var(--border-default);
   transform:translateY(-1px);
 }
+.theme-toggle .theme-glyph{display:block}
+.theme-toggle .theme-glyph-sun{display:none}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]) .theme-toggle .theme-glyph-sun{display:block}
+  :root:not([data-theme="light"]) .theme-toggle .theme-glyph-moon{display:none}
+}
+:root[data-theme="dark"] .theme-toggle .theme-glyph-sun{display:block}
+:root[data-theme="dark"] .theme-toggle .theme-glyph-moon{display:none}
 
 .header-controls{
   display:flex;

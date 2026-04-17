@@ -21,7 +21,6 @@ const pageLang = () => (root.lang || 'fr').startsWith('en') ? 'en' : 'fr';
 
 const paintThemeToggle = (btn, theme) => {
   const labels = THEME_LABELS[pageLang()];
-  btn.textContent = theme === 'dark' ? '☀' : '☾';
   const label = theme === 'dark' ? labels.toLight : labels.toDark;
   btn.setAttribute('aria-label', label);
   btn.setAttribute('title', label);
