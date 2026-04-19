@@ -1,0 +1,200 @@
+[
+  {
+    "slug": "affection",
+    "lang": "fr",
+    "out": "besoins/affection.html",
+    "body": "fr_affection.html",
+    "title": "Affection — Besoins humains fondamentaux",
+    "description": "Affection — aimer et se laisser aimer, dans quelques relations profondes.",
+    "body_attrs": "class=\"cat-r\""
+  },
+  {
+    "slug": "comprehension",
+    "lang": "fr",
+    "out": "besoins/comprehension.html",
+    "body": "fr_comprehension.html",
+    "title": "Compréhension — Besoins humains fondamentaux",
+    "description": "Compréhension — apprendre, maîtriser, comprendre pour habiter le monde avec prise.",
+    "body_attrs": "class=\"cat-c\""
+  },
+  {
+    "slug": "creation",
+    "lang": "fr",
+    "out": "besoins/creation.html",
+    "body": "fr_creation.html",
+    "title": "Création — Besoins humains fondamentaux",
+    "description": "Création — inventer, exprimer, produire. Une voie qui ouvre quand la performance ne suffit plus.",
+    "body_attrs": "class=\"cat-c\""
+  },
+  {
+    "slug": "identite",
+    "lang": "fr",
+    "out": "besoins/identite.html",
+    "body": "fr_identite.html",
+    "title": "Identité — Besoins humains fondamentaux",
+    "description": "Identité — continuité et cohérence de soi, ce qui reste quand le rôle s'efface.",
+    "body_attrs": "class=\"cat-s\""
+  },
+  {
+    "slug": "liberte",
+    "lang": "fr",
+    "out": "besoins/liberte.html",
+    "body": "fr_liberte.html",
+    "title": "Liberté — Besoins humains fondamentaux",
+    "description": "Liberté — être l'agent causal de sa propre vie, choisir selon ses valeurs.",
+    "body_attrs": "class=\"cat-s\""
+  },
+  {
+    "slug": "loisir",
+    "lang": "fr",
+    "out": "besoins/loisir.html",
+    "body": "fr_loisir.html",
+    "title": "Loisir — Besoins humains fondamentaux",
+    "description": "Loisir — ne rien faire d'utile, avec soin. Du temps sans finalité pour que la vie se ressente.",
+    "body_attrs": "class=\"cat-s\""
+  },
+  {
+    "slug": "participation",
+    "lang": "fr",
+    "out": "besoins/participation.html",
+    "body": "fr_participation.html",
+    "title": "Participation — Besoins humains fondamentaux",
+    "description": "Participation — contribuer, tenir un rôle reconnu, appartenir au collectif.",
+    "body_attrs": "class=\"cat-r\""
+  },
+  {
+    "slug": "protection",
+    "lang": "fr",
+    "out": "besoins/protection.html",
+    "body": "fr_protection.html",
+    "title": "Protection — Besoins humains fondamentaux",
+    "description": "Protection — sécurité intérieure, base de l'exploration et du lien.",
+    "body_attrs": "class=\"cat-p\""
+  },
+  {
+    "slug": "subsistance",
+    "lang": "fr",
+    "out": "besoins/subsistance.html",
+    "body": "fr_subsistance.html",
+    "title": "Subsistance — Besoins humains fondamentaux",
+    "description": "Subsistance — habiter son corps avec soin, pour que l'attention reste disponible à ce qui compte.",
+    "body_attrs": "class=\"cat-p\""
+  },
+  {
+    "slug": "index",
+    "lang": "en",
+    "out": "en/index.html",
+    "body": "en_index.html",
+    "title": "Fundamental human needs — guide",
+    "description": "Nine fundamental human needs — a reference guide based on the Max-Neef taxonomy.",
+    "body_attrs": ""
+  },
+  {
+    "slug": "affection",
+    "lang": "en",
+    "out": "en/needs/affection.html",
+    "body": "en_affection.html",
+    "title": "Affection — Fundamental human needs",
+    "description": "Affection — loving and letting oneself be loved, in a few deep relationships.",
+    "body_attrs": "class=\"cat-r\""
+  },
+  {
+    "slug": "creation",
+    "lang": "en",
+    "out": "en/needs/creation.html",
+    "body": "en_creation.html",
+    "title": "Creation — Fundamental human needs",
+    "description": "Creation — inventing, expressing, producing. A path that opens when performance is no longer enough.",
+    "body_attrs": "class=\"cat-c\""
+  },
+  {
+    "slug": "freedom",
+    "lang": "en",
+    "out": "en/needs/freedom.html",
+    "body": "en_freedom.html",
+    "title": "Freedom — Fundamental human needs",
+    "description": "Freedom — being the causal agent of one's own life, choosing according to one's own values.",
+    "body_attrs": "class=\"cat-s\""
+  },
+  {
+    "slug": "identity",
+    "lang": "en",
+    "out": "en/needs/identity.html",
+    "body": "en_identity.html",
+    "title": "Identity — Fundamental human needs",
+    "description": "Identity — continuity and coherence of self, what remains once the role fades.",
+    "body_attrs": "class=\"cat-s\""
+  },
+  {
+    "slug": "leisure",
+    "lang": "en",
+    "out": "en/needs/leisure.html",
+    "body": "en_leisure.html",
+    "title": "Leisure — Fundamental human needs",
+    "description": "Leisure — doing nothing useful, with care. Time without purpose, so that life may be felt directly.",
+    "body_attrs": "class=\"cat-s\""
+  },
+  {
+    "slug": "participation",
+    "lang": "en",
+    "out": "en/needs/participation.html",
+    "body": "en_participation.html",
+    "title": "Participation — Fundamental human needs",
+    "description": "Participation — contributing, holding a recognised role, belonging to a collective.",
+    "body_attrs": "class=\"cat-r\""
+  },
+  {
+    "slug": "protection",
+    "lang": "en",
+    "out": "en/needs/protection.html",
+    "body": "en_protection.html",
+    "title": "Protection — Fundamental human needs",
+    "description": "Protection — inner safety as a base for exploration and connection.",
+    "body_attrs": "class=\"cat-p\""
+  },
+  {
+    "slug": "subsistence",
+    "lang": "en",
+    "out": "en/needs/subsistence.html",
+    "body": "en_subsistence.html",
+    "title": "Subsistence — Fundamental human needs",
+    "description": "Subsistence — inhabiting the body with care, so that attention remains free for what matters.",
+    "body_attrs": "class=\"cat-p\""
+  },
+  {
+    "slug": "understanding",
+    "lang": "en",
+    "out": "en/needs/understanding.html",
+    "body": "en_understanding.html",
+    "title": "Understanding — Fundamental human needs",
+    "description": "Understanding — learning, mastering, comprehending so as to gain a foothold in the world.",
+    "body_attrs": "class=\"cat-c\""
+  },
+  {
+    "slug": "references",
+    "lang": "en",
+    "out": "en/references.html",
+    "body": "en_references.html",
+    "title": "References — Fundamental human needs",
+    "description": "References and methodology of the guide on fundamental human needs.",
+    "body_attrs": ""
+  },
+  {
+    "slug": "index",
+    "lang": "fr",
+    "out": "index.html",
+    "body": "fr_index.html",
+    "title": "Besoins humains fondamentaux — guide",
+    "description": "Neuf territoires à habiter — un guide pour retrouver le cap quand le grand objectif s'éloigne.",
+    "body_attrs": ""
+  },
+  {
+    "slug": "references",
+    "lang": "fr",
+    "out": "references.html",
+    "body": "fr_references.html",
+    "title": "Références — Besoins humains fondamentaux",
+    "description": "Références et méthodologie du guide sur les besoins humains fondamentaux.",
+    "body_attrs": ""
+  }
+]

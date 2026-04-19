@@ -49,6 +49,10 @@ if (backLink) {
   });
 }
 
+for (const btn of document.querySelectorAll('.print-btn')) {
+  btn.addEventListener('click', () => window.print());
+}
+
 const searchInput = document.querySelector('.search-input');
 if (searchInput) {
   const cards = [...document.querySelectorAll('.need-card')];

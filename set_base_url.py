@@ -39,7 +39,7 @@ def main():
         print(f"Base URL already set to {new_base}")
         return
 
-    targets = ['sitemap.xml', 'robots.txt']
+    targets = ['sitemap.xml', 'robots.txt', 'scripts/build.py']
     for root, dirs, files in os.walk('.'):
         for f in files:
             if f.endswith('.html'):
@@ -47,11 +47,12 @@ def main():
 
     updated = 0
     for path in targets:
-        if replace_in_file(path, old_base, new_base):
+        if os.path.exists(path) and replace_in_file(path, old_base, new_base):
             updated += 1
 
     print(f"Base URL: {old_base}  ->  {new_base}")
     print(f"Files updated: {updated}")
+    print("Tip: run `python scripts/build.py` to regenerate HTML from src/.")
 
 if __name__ == '__main__':
     main()
